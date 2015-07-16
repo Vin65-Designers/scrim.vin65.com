@@ -1,0 +1,100 @@
+button {
+	@media screen and (min-width: 581px) {
+		height: 3em;
+		line-height: 3em;
+		padding: 0 9px;
+	}
+
+	span{
+		padding: 0 1em;
+	}
+
+	&.defaultBtn,  &.modalBtn,  &.largeBtn{
+		background: $mainButtonColor;
+		border-radius: 3px;
+		text-decoration: none;
+		vertical-align: middle;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		
+		span{
+			background: none;
+			height: auto;
+			line-height: inherit;
+		}
+
+		&:hover, &:active{
+			background: $mainButtonHover;
+		}
+	}
+
+	&.modalBtn, &.altModalBtn{
+		height: 2.5em;
+		line-height: inherit;
+	}
+
+	&.altBtn, &.altModalBtn, &.altLargeBtn{
+		background: $altButtonColor;
+		border-radius: 3px;
+		text-decoration: none;
+		vertical-align: middle;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		
+		span{
+			background: none;
+			height: auto;
+			line-height: inherit;
+		}
+
+		&:hover, &:active{
+			background: $altButtonHover;
+		}
+	}
+}
+
+a{
+	span{
+		padding: 0 1em;
+		height: auto;
+		line-height: inherit;
+	}
+	
+	&.linkBtn, &.modalLinkBtn, &.largeLinkBtn{
+		background: $mainButtonColor;
+		border-radius: 3px;
+		text-decoration: none;
+		vertical-align: middle;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		
+		span{
+			background: none;
+			height: auto;
+			line-height: inherit;
+		}
+
+		&:hover, &:active{
+			background: $mainButtonHover;
+		}
+	}
+
+	&.linkAltBtn, &.modalLinkAltBtn, &.modalLinkAltBtn{
+		background: $altButtonColor;
+		border-radius: 3px;
+		text-decoration: none;
+		vertical-align: middle;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		
+		span{
+			background: none;
+			height: auto;
+			line-height: inherit;
+		}
+
+		&:hover, &:active{
+			background: $altButtonHover;
+		}
+	}
+
+	&.modalLinkBtn, &.modalLinkAltBtn, &.modalLinkAltBtn{
+		min-width: auto;
+	}
+}

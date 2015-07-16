@@ -1,0 +1,117 @@
+// ========================= //
+// Global //
+// ========================= //
+$georgia: Georgia, serif;
+$lucida: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+$sintony: 'Sintony', sans-serif;	
+
+$maxWidth: 990px;
+$fontFamily: $sintony;
+$headingFontFamily: $sintony;
+
+// ========================= //
+// Color //
+// ========================= //
+$grey-light: #ccc;
+$black: #000;
+$white: #fff;
+$blue-light: #3b73ac;
+$blue-dark: #2e5b87;
+$offBlack: #1B1B1B;
+$flatgrey: #999999;
+
+$grey: #575757;
+$lightGrey: #e0e0df;
+$darkGrey: #323232;
+
+$green: #359a62;
+$blue: #287bc0;
+
+
+// ========================= //
+// Themes //
+// ========================= //
+
+// @import 'themes/themeSettings_black';
+@import 'themes/themeSettings_white';
+
+
+@mixin gradient($color1, $color2){
+	background-color: $color1;
+	background-image: -webkit-linear-gradient(top, $color1, $color2);
+	background-image: -moz-linear-gradient(top, $color1, $color2);
+	background-image: -ms-linear-gradient(top, $color1, $color2);
+	background-image: -o-linear-gradient(top, $color1, $color2);
+	background-image: linear-gradient(top, $color1, $color2);
+}
+
+@mixin boxSizing{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.hideText{
+	overflow:hidden;
+	text-indent:100%;
+	white-space:nowrap;
+	
+	a{
+		display:block;
+		height:100%;
+	}
+}
+
+// Font Colors
+$fontColor: $offBlack; // Main Body Content font color
+
+// Background Color
+$backgroundColor: $white; // Main Background Color
+
+// Heading Colors
+$headingFontColor: $darkGrey; // Default Heading Font Color
+$headerFontColor: $darkGrey; // Font Color outside the container
+$headerFontColorHover: $black; // Hover font color outside the container
+
+$navSelected: $navLinkHover;
+$leftNavSelected: $black;
+
+$subNavLinkColor: $navLinkColor; //Font Color for sub navigation
+$subNavLinkHover: $navLinkHover; //Font Color for sub navigation hover
+
+// Footer Colors
+$footerColor: $lightGrey; //Footer Color
+$footerHover: $white; // Footer Link Hover
+
+// Border Colors
+$borderColor: $lightGrey; // Main Border Color
+
+// Buttons
+$mainButtonHover: lighten($mainButtonColor, 5%);
+$altButtonColor: #989898;
+$altButtonHover: lighten($altButtonColor, 5%);
+
+// Button Colors
+// @mixin mainButtonColor() {
+// 	@include gradient($blue-light, $blue-dark); // Main Button Color
+// } 
+
+// @mixin mainButtonHover() {
+// 	@include gradient(lighten($blue-light, 5%), lighten($blue-dark, 5%));
+// } 
+
+// @mixin altButtonColor() {
+// 	@include gradient($grey-light, $darkGrey); // Main Button Color
+// } 
+
+// @mixin altButtonHover() {
+// 	@include gradient(lighten($grey-light, 5%), lighten($darkGrey, 5%));
+// } 
+
+// Form Colors
+$quanityForm: $grey-light; // Add to cart quanity input form field background color.
+$quanityFormFont: $black; // Add to cart quanity input form field font color.
+
+// Back to Top Colors
+$backToTop: $darkGrey; // Back to top button color
+$backToTopFont: $white; // Back to top button font color

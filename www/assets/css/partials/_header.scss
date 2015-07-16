@@ -1,0 +1,86 @@
+header.primary{
+	background: url($overlayBg);
+	background: $overlayColor;
+	position: relative;
+	width: 100%;
+	z-index: 10;
+
+	.wrapper {
+		max-width: 1250px;
+
+		@media screen and (min-width: 581px) {
+			width: 93%;
+		}
+	}
+}
+
+	#user-tools {
+		font-size: 12px;
+
+		@media screen and (max-width: 580px){
+			border-bottom: 1px solid $userToolsBorderColor;
+		}
+
+		a {
+			color: $userToolsColor;
+		}
+
+		.v65-editProfile, .v65-yourAccount {
+			@media screen and (max-width: 580px) {
+				width: 32%;
+			}
+		}
+
+		.v65-login, .v65-logout {
+			@media screen and (max-width: 580px) {
+				width: 20%;
+			}
+		}
+	}
+
+	.v65-yourAccount, .v65-editProfile,
+	.v65-login, .v65-logout {
+		border-color: $userToolsBorderColor; 
+	}
+
+	.userToolsWrapper {
+		width: 500px;
+
+		@media screen and (max-width: 900px) {
+			width: auto;
+		}
+
+		@media screen and (min-width: 581px) {
+			float: right;
+		}
+	}
+
+	.logo{
+		background:{
+			image: image-url($logo);
+			position: top center;
+			repeat: no-repeat;
+		}
+		background-size: contain;
+		height: 140px;
+		margin: 0.4em 0;
+		position: relative;
+		width: 260px;
+
+		&.errorLogo{
+			float: none;
+		}
+
+		@media screen and (-webkit-min-device-pixel-ratio: 1.5),	(min-device-pixel-ratio: 1.5){
+			background-image: image-url($logo-retina);
+		}
+		
+		@media screen and (max-width: 840px){
+			clear: both;
+			margin: 0.5em auto 0;
+		}
+
+		@media screen and (min-width: 841px){
+			float: left;
+		}
+	}

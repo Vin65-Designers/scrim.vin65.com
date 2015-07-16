@@ -1,0 +1,43 @@
+#v65-modalContentHeader{
+	background: $headingFontColor;
+}
+
+	.pageContent{
+		@media screen and (max-width: 767px){
+			padding: 3em 0 0;
+		}
+		
+		@media screen and (min-width: 768px){
+			padding: 5em 0 0;
+		}
+	}
+
+.content .wrapper {
+	background-color: #fff;
+
+	@media screen and (max-width: 767px){
+		padding: 3em 1em 1em;
+	}
+	
+	@media screen and (min-width: 768px){
+		padding: 3em;
+	}
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+
+	@media screen and (min-width: 581px) and (max-width: 1030px){
+		padding: 0 3%;
+	}
+}
+
+/* ----- a. Homepage Styles ----- */
+@import 'content_home';
+
+/* ----- b. Page Styles ----- */
+@import 'content_page';
+
+/* ----- c. Store Styles ----- */
+@import 'content_store';

@@ -1,0 +1,118 @@
+footer{
+	background: $footerBackgroundColor;
+	color: $footerColor;
+	padding: 1.5em 0;
+	width: 100%;
+
+	.wrapper {
+		max-width: 1250px;
+
+		@media screen and (min-width: 581px) {
+			width: 93%;
+		}
+	}
+
+	ul{
+		list-style: none;
+		margin: 0 1em;
+		padding: 0;
+
+		@media screen and (min-width: 768px){
+			margin-bottom: 0.5em;
+		}
+	}
+
+	li{
+		@media screen and (max-width: 767px){
+			border-top: 1px solid $footerBorder;
+			line-height: 44px;
+			text-align: center;
+		}
+
+		@media screen and (min-width: 768px){
+			display: inline;
+			padding:0 5px;
+		}
+
+		a{
+			color: $footerColor;
+			display: inline-block;
+			font-size: 0.917em;
+			position: relative;
+
+			@media screen and (max-width: 767px){
+				width: 100%;
+			}
+
+			&:hover{
+				color: $footerHover;
+			}
+		}
+	}
+
+	.footerTools {
+		@media screen and (min-width: 768px){
+			float: left;
+		}
+	}
+
+	.legal{
+		color: $footerLegal;
+		font-size: 0.917em;
+
+		a {
+			color: $footerLegal;
+
+			&:hover, &:focus, &:active {
+				color: lighten($footerLegal, 8%);
+			}
+		}
+
+		li{
+			display: block;
+		}
+	}
+
+	a{
+		color: $footerColor;
+	}
+
+	.socialMedia {
+		margin-top: 1em;
+		text-align: center;
+
+		@media screen and (min-width: 768px) {
+			float: right;
+			text-align: right;
+		}
+
+		a {
+			border: 1px solid $footerBorder;
+			border-radius: 50%;
+			font-size: 1.5em;
+			padding: 9px;
+			-ms-transition: all 0.3s ease;
+			-moz-transition: all 0.3s ease;
+			-o-transition: all 0.3s ease;
+			-webkit-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+
+			&:hover, &:active, &:focus {
+				border-color: $footerColor;
+			}
+
+			@media screen and (max-width: 767px){
+				width: auto;
+			}
+		}
+
+		li {
+			border: 0;
+
+			@media screen and (max-width: 767px) {
+				display: inline-block;
+				padding: 0.5em 1em;
+			}
+		}
+	}
+}
