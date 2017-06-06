@@ -32,8 +32,8 @@ $blue: #287bc0;
 // Themes //
 // ========================= //
 
-// @import 'themes/themeSettings_black';
-@import 'themes/themeSettings_white';
+@import 'themes/themeSettings_black';
+// @import 'themes/themeSettings_white';
 
 
 @mixin gradient($color1, $color2){
