@@ -5,7 +5,14 @@ footer{
 	width: 100%;
 
 	.wrapper {
+		@media screen and (min-width: 960px) {
+		-webkit-display: flex;
+		-moz-display: flex;
+		-ms-display: flex;
+		-o-display: flex;
+		display: flex;
 		max-width: 1250px;
+		}
 
 		@media screen and (min-width: 581px) {
 			width: 93%;
@@ -50,12 +57,6 @@ footer{
 		}
 	}
 
-	.footerTools {
-		@media screen and (min-width: 768px){
-			float: left;
-		}
-	}
-
 	.legal{
 		color: $footerLegal;
 		font-size: 0.917em;
@@ -78,18 +79,14 @@ footer{
 	}
 
 	.socialMedia {
-		margin-top: 1em;
+		margin-left: auto;
 		text-align: center;
-
-		@media screen and (min-width: 768px) {
-			float: right;
-			text-align: right;
+		@media screen and (max-width: 960px) and (min-width: 767px){
+			margin-left: 1em;
+			text-align: left;
 		}
 
 		a {
-			border: 1px solid $footerBorder;
-			border-radius: 50%;
-			font-size: 1.5em;
 			padding: 9px;
 			-ms-transition: all 0.3s ease;
 			-moz-transition: all 0.3s ease;

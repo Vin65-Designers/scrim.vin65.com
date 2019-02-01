@@ -69,33 +69,20 @@ header.primary{
 		}
 	}
 
-	.logo{
-		background:{
-			image: image-url($logo);
-			position: top center;
-			repeat: no-repeat;
-		}
-		background-size: contain;
-		height: 140px;
-		margin: 0.4em 0;
-		position: relative;
-		width: 260px;
+	.v65-logo{
+		margin: 0.4em 0 !important;
 
 		&.errorLogo{
 			float: none;
 		}
-
-		@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){ 
-			background-image: image-url($logo-retina);
-		}
 		
 		@media screen and (max-width: 840px){
-			clear: both;
-			margin: 0.5em auto 0;
+			clear: both !important;
+			margin: 0.5em auto 0 !important;
 		}
 
 		@media screen and (min-width: 841px){
-			float: left;
+			float: left !important;
 		}
 	}
 

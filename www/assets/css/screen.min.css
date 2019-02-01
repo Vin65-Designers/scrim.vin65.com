@@ -1,4 +1,3 @@
-@charset "utf-8";
 /* CSS Document */
 /* ====================================================================================================
 	Table of Content
@@ -8,7 +7,7 @@
 	1. Typography - Copy into admin.css
 	2. Header
 	3. Navigation
-		a. Navigation
+    a. Navigation
 		b. Sub Navigation
 	4. Content
 		a. Homepage Styles
@@ -403,7 +402,6 @@ table {
   font-weight: normal;
   font-style: normal;
 }
-
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -507,7 +505,7 @@ table {
   width: 100%;
   height: auto;
   overflow: hidden;
-  background: white url(../nivo/loading.gif) no-repeat 50% 50%;
+  background: #fff url(../nivo/loading.gif) no-repeat 50% 50%;
 }
 
 .nivoSlider img {
@@ -659,7 +657,7 @@ html {
 }
 
 body {
-  color: #1b1b1b;
+  color: #1B1B1B;
   font-family: "Sintony", sans-serif;
   background-position: center;
   background-attachment: fixed;
@@ -767,13 +765,13 @@ form {
 }
 
 legend {
-  color: #1b1b1b;
+  color: #1B1B1B;
 }
 
 hr {
-  background-color: #1b1b1b;
+  background-color: #1B1B1B;
   border: 0;
-  color: #1b1b1b;
+  color: #1B1B1B;
   height: 1px;
 }
 
@@ -806,11 +804,11 @@ header.primary .wrapper {
 }
 @media screen and (max-width: 580px) {
   #user-tools {
-    border-bottom: 1px solid #666666;
+    border-bottom: 1px solid #666;
   }
 }
 #user-tools a {
-  color: #d0d0d0;
+  color: #D0D0D0;
 }
 @media screen and (max-width: 580px) {
   #user-tools .v65-editProfile, #user-tools .v65-yourAccount {
@@ -825,7 +823,7 @@ header.primary .wrapper {
 
 .v65-yourAccount, .v65-editProfile,
 .v65-login, .v65-logout {
-  border-color: #666666;
+  border-color: #666;
 }
 @media screen and (min-width: 581px) {
   .v65-yourAccount, .v65-editProfile,
@@ -858,33 +856,21 @@ header.primary .wrapper {
   }
 }
 
-.logo {
-  background-image: url('../images/logo-white.png?1437067647');
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 140px;
-  margin: 0.4em 0;
-  position: relative;
-  width: 260px;
+.v65-logo {
+  margin: 0.4em 0 !important;
 }
-.logo.errorLogo {
+.v65-logo.errorLogo {
   float: none;
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  .logo {
-    background-image: url('../images/logo-white@2x.png?1437067647');
-  }
-}
 @media screen and (max-width: 840px) {
-  .logo {
-    clear: both;
-    margin: 0.5em auto 0;
+  .v65-logo {
+    clear: both !important;
+    margin: 0.5em auto 0 !important;
   }
 }
 @media screen and (min-width: 841px) {
-  .logo {
-    float: left;
+  .v65-logo {
+    float: left !important;
   }
 }
 
@@ -946,7 +932,7 @@ header.primary .wrapper {
     position: fixed;
     top: 48px;
     left: -100%;
-    background-color: #1b1b1b;
+    background-color: #1B1B1B;
     height: 94%;
     height: -moz-calc(100% - 48px);
     height: -webkit-calc(100% - 48px);
@@ -979,7 +965,7 @@ header.primary .wrapper {
   }
 }
 .mainMenu ul ul {
-  background: #1b1b1b;
+  background: #1B1B1B;
   display: none;
   font-size: 12px;
   left: -10px;
@@ -1005,7 +991,7 @@ header.primary .wrapper {
   width: 0;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-bottom: 7px solid #1b1b1b;
+  border-bottom: 7px solid #1B1B1B;
   position: absolute;
   top: -7px;
   left: 20px;
@@ -1055,7 +1041,7 @@ header.primary .wrapper {
   }
 }
 .mainMenu li li a {
-  color: #d0d0d0;
+  color: #D0D0D0;
   display: block;
   height: 28px;
   line-height: 28px;
@@ -1066,7 +1052,7 @@ header.primary .wrapper {
   width: 170px;
 }
 .mainMenu li li a:hover {
-  color: white;
+  color: #fff;
 }
 @media screen and (max-width: 580px) {
   .mainMenu li li a {
@@ -1075,7 +1061,7 @@ header.primary .wrapper {
   }
 }
 .mainMenu a {
-  color: #d0d0d0;
+  color: #D0D0D0;
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -1103,11 +1089,11 @@ header.primary .wrapper {
   }
 }
 .mainMenu a:hover {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 .mainMenu .v65-pageAParent {
-  color: white;
+  color: #fff;
 }
 @media screen and (max-width: 919px) {
   .mainMenu .v65-home {
@@ -1115,7 +1101,7 @@ header.primary .wrapper {
   }
 }
 .mainMenu .v65-selected {
-  color: white;
+  color: #fff;
 }
 .mainMenu .footerMenuLink {
   bottom: 0;
@@ -1178,7 +1164,7 @@ header.primary .wrapper {
   width: 100%;
 }
 .subMenu .v65-leftSelected {
-  color: black;
+  color: #000;
   font-weight: bold;
 }
 .subMenu .v65-leftSelected ul {
@@ -1186,7 +1172,7 @@ header.primary .wrapper {
 }
 
 .mobileMenu {
-  color: #d0d0d0;
+  color: #D0D0D0;
   display: none;
   float: left;
   font-size: 2.5em;
@@ -1266,7 +1252,7 @@ header.primary .wrapper {
   padding: 10em 0;
 }
 .homepageContent p, .homepageContent h1, .homepageContent h2, .homepageContent h3, .homepageContent h4, .homepageContent h5, .homepageContent h6, .homepageContent ul, .homepageContent li {
-  color: #e7e7e7;
+  color: #E7E7E7;
   margin: 0 auto;
   max-width: 650px;
   padding: 0 5%;
@@ -1311,7 +1297,7 @@ header.primary .wrapper {
 .backToTop {
   background: #323232;
   bottom: 1em;
-  color: white;
+  color: #fff;
   border: 1px solid #e0e0df;
   border-radius: 50%;
   display: none;
@@ -1470,7 +1456,7 @@ header.primary .wrapper {
 #v65-CalendarTable th {
   background-color: #fff;
   border: 0;
-  color: black;
+  color: #000;
   font-family: "Sintony", sans-serif;
   padding: 5px 0;
 }
@@ -1833,7 +1819,7 @@ button.defaultBtn, button.modalBtn, button.largeBtn {
   border-radius: 3px;
   text-decoration: none;
   vertical-align: middle;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 button.defaultBtn span, button.modalBtn span, button.largeBtn span {
   background: none;
@@ -1852,7 +1838,7 @@ button.altBtn, button.altModalBtn, button.altLargeBtn {
   border-radius: 3px;
   text-decoration: none;
   vertical-align: middle;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 button.altBtn span, button.altModalBtn span, button.altLargeBtn span {
   background: none;
@@ -1873,7 +1859,7 @@ a.linkBtn, a.modalLinkBtn, a.largeLinkBtn {
   border-radius: 3px;
   text-decoration: none;
   vertical-align: middle;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span {
   background: none;
@@ -1888,7 +1874,7 @@ a.linkAltBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
   border-radius: 3px;
   text-decoration: none;
   vertical-align: middle;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 a.linkAltBtn span, a.modalLinkAltBtn span, a.modalLinkAltBtn span {
   background: none;
@@ -1906,13 +1892,20 @@ a.modalLinkBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
      7. Footer
 ======================================================================================================== */
 footer {
-  background: black;
+  background: #000;
   color: #e0e0df;
   padding: 1.5em 0;
   width: 100%;
 }
-footer .wrapper {
-  max-width: 1250px;
+@media screen and (min-width: 960px) {
+  footer .wrapper {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex;
+    max-width: 1250px;
+  }
 }
 @media screen and (min-width: 581px) {
   footer .wrapper {
@@ -1954,12 +1947,7 @@ footer li a {
   }
 }
 footer li a:hover {
-  color: white;
-}
-@media screen and (min-width: 768px) {
-  footer .footerTools {
-    float: left;
-  }
+  color: #fff;
 }
 footer .legal {
   color: #575757;
@@ -1978,19 +1966,16 @@ footer a {
   color: #e0e0df;
 }
 footer .socialMedia {
-  margin-top: 1em;
+  margin-left: auto;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 960px) and (min-width: 767px) {
   footer .socialMedia {
-    float: right;
-    text-align: right;
+    margin-left: 1em;
+    text-align: left;
   }
 }
 footer .socialMedia a {
-  border: 1px solid #323232;
-  border-radius: 50%;
-  font-size: 1.5em;
   padding: 9px;
   -ms-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
