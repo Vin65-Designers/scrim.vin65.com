@@ -25,9 +25,7 @@
 
 	<header class="primary v65-group">
 		<div class="wrapper v65-group">			
-			<h1 class="logo hideText">
-				<a href="/" accesskey="h"><cf_websiteName></a>
-			</h1>
+				<cf_logo>
 		</div>
 	</header>
 
@@ -48,12 +46,15 @@
 				</nav>	
 					
 				<ul class="legal">
+					<li><cf_footerInfo></li>
 					<li><cf_copyright></li>
 					<li><cf_vin65Accolade></li>
 				</ul>
 			</div><!--/footerTools-->
 
-			<cf_customFile file="/v65html/_social.html">
+			<div class="socialMedia">
+					<cf_socialMediaLinks>
+			</div>
 		</div>
 	</footer>
 

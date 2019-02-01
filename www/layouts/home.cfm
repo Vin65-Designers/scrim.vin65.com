@@ -43,9 +43,7 @@
 					</div><!--/user-tools-->
 				</div>
 				
-				<h1 class="logo hideText">
-					<a href="/" accesskey="h"><cf_websiteName></a>
-				</h1>
+				<cf_logo>
 
 				<nav class="mainMenu">
 					<cf_layoutHeaderNav depth="2">
@@ -78,12 +76,15 @@
 				</nav>	
 
 				<ul class="legal">
+					<li><cf_footerInfo></li>
 					<li><cf_copyright></li>
 					<li><cf_vin65Accolade></li>
 				</ul>
 			</div><!--/footerTools-->
 
-			<cf_customFile file="/v65html/_social.html">
+			<div class="socialMedia">
+					<cf_socialMediaLinks>
+			</div>
 		</div>
 	</footer>
 
