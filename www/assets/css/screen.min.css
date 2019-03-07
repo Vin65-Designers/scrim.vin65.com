@@ -104,7 +104,7 @@ a {
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 a:focus {
-  outline: thin dotted;
+  outline: 2px solid orange;
 }
 
 /**
@@ -747,11 +747,11 @@ dd, dt, li {
 }
 
 a {
-  color: #359a62;
+  color: #31754f;
   text-decoration: none;
 }
 a:hover, a:focus, a:active {
-  color: #2b7c4f;
+  color: #92b09f;
 }
 
 img {
@@ -1257,6 +1257,10 @@ header.primary .wrapper {
   max-width: 650px;
   padding: 0 5%;
   width: 90%;
+}
+
+.homepageContent a {
+  color: #69af88;
 }
 
 .homepageBackground {
@@ -1801,6 +1805,10 @@ div#productReviewsAnchor,
   content: "\e603";
 }
 
+.blogSection h3 {
+  font-size: 1.125em;
+}
+
 /*   ===================================================================================================
      6. Buttons
 ======================================================================================================== */
@@ -1815,7 +1823,7 @@ button span {
   padding: 0 1em;
 }
 button.defaultBtn, button.modalBtn, button.largeBtn {
-  background: #359a62;
+  background: #25774a;
   border-radius: 3px;
   text-decoration: none;
   vertical-align: middle;
@@ -1827,7 +1835,7 @@ button.defaultBtn span, button.modalBtn span, button.largeBtn span {
   line-height: inherit;
 }
 button.defaultBtn:hover, button.defaultBtn:active, button.modalBtn:hover, button.modalBtn:active, button.largeBtn:hover, button.largeBtn:active {
-  background: #3cad6e;
+  background: #42a86f;
 }
 button.modalBtn, button.altModalBtn {
   height: 2.5em;
@@ -1855,7 +1863,7 @@ a span {
   line-height: inherit;
 }
 a.linkBtn, a.modalLinkBtn, a.largeLinkBtn {
-  background: #359a62;
+  background: #25774a;
   border-radius: 3px;
   text-decoration: none;
   vertical-align: middle;
@@ -1867,7 +1875,7 @@ a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span {
   line-height: inherit;
 }
 a.linkBtn:hover, a.linkBtn:active, a.modalLinkBtn:hover, a.modalLinkBtn:active, a.largeLinkBtn:hover, a.largeLinkBtn:active {
-  background: #3cad6e;
+  background: #42a86f;
 }
 a.linkAltBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
   background: #989898;
@@ -1950,11 +1958,11 @@ footer li a:hover {
   color: #fff;
 }
 footer .legal {
-  color: #575757;
+  color: #7d7d7d;
   font-size: 0.917em;
 }
 footer .legal a {
-  color: #575757;
+  color: #7d7d7d;
 }
 footer .legal a:hover, footer .legal a:focus, footer .legal a:active {
   color: #6b6b6b;

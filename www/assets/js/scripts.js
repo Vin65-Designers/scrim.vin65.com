@@ -182,14 +182,15 @@
 			success: function(xml) {
 				var images = "";
 				$(xml).find('img').each(function() {
-					var location = '/assets/images/photogallery/images/large/',
-						photo = $(this).attr('src'),
-						caption = $(this).attr('caption'),
-						url = $(this).attr('link');
-					if (url === undefined) {
-						images += '<img src="'+location+photo+'" title="'+caption+'"/>';
-					} else{
-						images += '<a href="'+url+'"><img src="'+location+photo+'" title="'+caption+'"/></a>';
+					var location='/assets/images/photogallery/images/large/',
+					photo=$(this).attr('src'),
+					caption=$(this).attr('caption'),
+					alt = $(this).attr('src'),
+					url=$(this).attr('link');
+					if (url===undefined){
+						images +='<img src="'+location+photo+'" alt="'+alt+'" title="'+caption+'"/>';
+					}else{
+						images +='<a href="'+url+'"><img src="'+location+photo+'" alt="'+alt+'" title="'+caption+'"/></a>';
 					}
 				});
 				gallery.append(images);
