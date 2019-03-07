@@ -1,5 +1,5 @@
 <cfoutput> <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 	<meta charset="utf-8">
@@ -32,6 +32,7 @@
 		<header class="primary v65-group">
 			<div class="wrapper v65-group">
 				<div class="userToolsWrapper v65-group">
+					<cf_skipToContent targetID="mainContent">
 					<div class="mobileMenu">
 						<i class="icon-mobile"></i>
 					</div>
@@ -59,12 +60,14 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="homepageProductGroup">
-		<div class="wrapper">
-			<cf_product_group code="HomepageProductGroup">
+	
+	<main>
+		<div class="homepageProductGroup" id="mainContent">
+			<div class="wrapper">
+				<cf_product_group code="HomepageProductGroup">
+			</div>
 		</div>
-	</div>
+	</main>
 	
 	<footer>
 		<div class="wrapper v65-group">

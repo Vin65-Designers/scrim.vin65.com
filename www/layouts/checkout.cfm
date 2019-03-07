@@ -1,5 +1,5 @@
 <cfoutput> <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 	<meta charset="utf-8">
@@ -28,14 +28,16 @@
 				<cf_logo>
 		</div>
 	</header>
-
-	<article class="content pageContent v65-group">
-		<a class="backToTop" href="##"><i class="icon-up-bold"></i></a>	
-		<div class="wrapper v65-group">
-			<cf_mainContent>
-		</div>	
-	</article><!--/contentWide-->
 	
+	<main>
+		<article class="content pageContent v65-group">
+			<a class="backToTop" href="##"><i class="icon-up-bold"></i></a>	
+			<div class="wrapper v65-group">
+				<cf_mainContent>
+			</div>	
+		</article><!--/contentWide-->
+	</main>
+
 	<footer>
 		<div class="wrapper v65-group">
 			<a name="footerMenu"></a>

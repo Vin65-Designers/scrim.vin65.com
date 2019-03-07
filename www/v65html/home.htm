@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 	<meta charset="utf-8">
@@ -34,6 +34,7 @@
 		<header class="primary v65-group">
 			<div class="wrapper v65-group">
 				<div class="userToolsWrapper v65-group">
+					<v65:skipToContent targetID="mainContent"></v65:skipToContent>
 					<div class="mobileMenu">
 						<i class="icon-mobile"></i>
 					</div>
@@ -61,12 +62,14 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="homepageProductGroup">
-		<div class="wrapper">
-			<v65:product:group code="HomepageProductGroup"></v65:product:group>
+	
+	<main>
+		<div class="homepageProductGroup" id="mainContent">
+			<div class="wrapper">
+				<v65:product:group code="HomepageProductGroup"></v65:product:group>
+			</div>
 		</div>
-	</div>
+	</main>
 	
 	<footer>
 		<div class="wrapper v65-group">

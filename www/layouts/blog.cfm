@@ -1,5 +1,5 @@
 <cfoutput> <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 	<meta charset="utf-8">
@@ -26,6 +26,7 @@
 	<header class="primary v65-group">
 		<div class="wrapper v65-group">
 			<div class="userToolsWrapper v65-group">
+				<cf_skipToContent targetID="mainContent">
 				<div class="mobileMenu">
 					<i class="icon-mobile"></i>
 				</div>
@@ -45,36 +46,38 @@
 		</div>
 	</header>
 	
-	<section class="content pageContent v65-group">
-		<a class="backToTop" href="##"><i class="icon-up-bold"></i></a>
+	<main>
+		<section class="content pageContent v65-group" id="mainContent">
+			<a class="backToTop" href="##"><i class="icon-up-bold"></i></a>
 
-		<div class="wrapper v65-group">
-			<div class="blogContent">
-				<cf_mainContent>
-			</div><!--/blogContent-->
-			
-			<aside class="blogFilterWrapper">
-				<a name="footerMenu"></a>
-					<div class="blogSection">
-						<h5>Recent Posts</h5>
-						<cf_blogRecentPosts maxrows="10">
-					</div>
-					<div class="blogSection">
-						<h5>Blog Categories</h5>
-						<cf_blogCategories>
-					</div>
-					<div class="blogSection">
-						<h5>Our Writers</h5>
-						<cf_blogAuthors>
-					</div>
-					<div class="blogSection">
-						<h5>Blog Archives</h5>
-						<cf_blogArchives>
-					</div>
-			</aside><!--/blogRightWrapper-->
-		</div>
-	</section><!--/content-->
-
+			<div class="wrapper v65-group">
+				<div class="blogContent">
+					<cf_mainContent>
+				</div><!--/blogContent-->
+				
+				<aside class="blogFilterWrapper">
+					<a name="footerMenu"></a>
+						<div class="blogSection">
+							<h3>Recent Posts</h3>
+							<cf_blogRecentPosts maxrows="10">
+						</div>
+						<div class="blogSection">
+							<h3>Blog Categories</h3>
+							<cf_blogCategories>
+						</div>
+						<div class="blogSection">
+							<h3>Our Writers</h3>
+							<cf_blogAuthors>
+						</div>
+						<div class="blogSection">
+							<h3>Blog Archives</h3>
+							<cf_blogArchives>
+						</div>
+				</aside><!--/blogRightWrapper-->
+			</div>
+		</section><!--/content-->
+	</main>
+	
 	<footer>
 		<div class="wrapper v65-group">
 			<a name="footerMenu"></a>

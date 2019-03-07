@@ -1,5 +1,5 @@
 <cfoutput> <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 	<meta charset="utf-8">
@@ -31,6 +31,7 @@
 	<header class="primary v65-group">
 		<div class="wrapper v65-group">
 			<div class="userToolsWrapper v65-group">
+				<cf_skipToContent targetID="mainContent">
 				<div class="mobileMenu">
 					<i class="icon-mobile"></i>
 				</div>
@@ -50,19 +51,21 @@
 		</div>
 	</header>
 	
-	<section class="content pageContent v65-group">
-		<a class="backToTop" href="##"><i class="icon-up-bold"></i></a>
-		<div class="wrapper v65-group">
-			<article class="page">
-				<cf_mainContent>
-			</article>
-			
-			<aside class="subMenu">
-				<a name="footerMenu"></a>
-				<cf_layoutLeftNav>
-			</aside>
-		</div>	
-	</section><!--/pageContent-->
+	<main>
+		<section class="content pageContent v65-group" id="mainContent">
+			<a class="backToTop" href="##"><i class="icon-up-bold"></i></a>
+			<div class="wrapper v65-group">
+				<article class="page">
+					<cf_mainContent>
+				</article>
+				
+				<aside class="subMenu">
+					<a name="footerMenu"></a>
+					<cf_layoutLeftNav>
+				</aside>
+			</div>	
+		</section><!--/pageContent-->
+	</main>
 	
 	<footer>
 		<div class="wrapper v65-group">
