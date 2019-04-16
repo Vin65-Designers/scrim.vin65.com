@@ -13,7 +13,7 @@
 
 	<cf_vin65GlobalAssets>
 
-	<cf_css files="/assets/css/screen.min.css">
+	<cf_css files="/assets/slick/slick-winedirect.css,/assets/slick/slick-theme-winedirect.css,/assets/css/screen.min.css">
 	
 	<!--[if lt IE 9]>
 		<script src="/assets/js/html5shiv-printshiv.js"></script>
@@ -84,7 +84,7 @@
 		</div>
 	</footer>
 
-	<cf_js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js">
+	<cf_js files="/assets/slick/slick-winedirect.js,/assets/js/scripts.js">
 
 	<cf_vin65GlobalFooterAssets>
 
